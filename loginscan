@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# cronjob:  
+# * * * * * /root/loginscan
+
+
 FILE=/root/.loginold
 MAILTO="xyz@xyz.com"
 

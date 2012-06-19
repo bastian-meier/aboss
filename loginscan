@@ -15,7 +15,7 @@ NEW="$(getlogin)"
 if test "$OLD" != "$NEW"; then
     echo -e "$NEW" > /root/.loginold
     if test "" != "$NEW"; then
-       mail -r warnung@kscampus.de -s"Achtung: $HOSTNAME Last-Login-Status geaendert" $MAILTO <<- EOF-EOF
+       mail -r warnung@xyz.de -s"Achtung: Last-Login-Status geaendert" $MAILTO <<- EOF-EOF
 $NEW
 EOF-EOF
 fi
